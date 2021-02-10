@@ -1,14 +1,16 @@
 import org.approvaltests.Approvals;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
+import static com.github.stefanbirkner.systemlambda.SystemLambda.tapSystemOut;
 
 public class SongApproval {
 
     @Test
-    public void testList() {
-        String[] names = {"Llewellyn", "James", "Dan", "Jason", "Katrina"};
-        Arrays.sort(names);
-        Approvals.verifyAll("", names);
+    public void verifyAllSongWithoutParameters() throws Exception {
+        String text = tapSystemOut(() -> {
+            Song.main(new String[]{});
+        });
+
+        Approvals.verify(text);
     }
 }
