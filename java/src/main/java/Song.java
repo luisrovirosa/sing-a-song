@@ -24,34 +24,29 @@ class Song {
                 "horse", "...She's dead, of course!");
         String song = thereWasAnOldLadyWhoSwallowedA(animal1) + ".\n" +
                 iDontKnow(animal1) +
-                "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal2) + ";\n" +
                 animalRhyme.get(animal2) + "\n" +
                 shallowToCatchPhrases(new String[]{animal2, animal1}) +
                 iDontKnow(animal1) +
-                "\n" +
+
                 thereWasAnOldLadyWhoSwallowedA(animal3) + ";\n" +
                 animalRhyme.get(animal3) + "\n" +
                 shallowToCatchPhrases(new String[]{animal3, animal2, animal1}) +
                 iDontKnow(animal1) +
-                "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal4) + ";\n" +
                 animalRhyme.get(animal4) + "\n" +
                 shallowToCatchPhrases(new String[]{animal4, animal3, animal2, animal1}) +
 
                 iDontKnow(animal1) +
-                "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal5) + ";\n" +
                 animalRhyme.get(animal5) + "\n" +
                 shallowToCatchPhrases(new String[]{animal5, animal4, animal3, animal2, animal1}) +
                 iDontKnow(animal1) +
-                "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal6) + ";\n" +
                 animalRhyme.get(animal6) + "\n" +
                 shallowToCatchPhrases(new String[]{animal6, animal5, animal4, animal3, animal2, animal1}) +
 
                 iDontKnow(animal1) +
-                "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal7) + "...\n" +
                 animalRhyme.get(animal7);
 
@@ -59,7 +54,7 @@ class Song {
     }
 
     private static String iDontKnow(String animal1) {
-        return "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n";
+        return "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n\n";
     }
 
     private static String thereWasAnOldLadyWhoSwallowedA(String animal1) {
