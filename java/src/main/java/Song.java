@@ -20,32 +20,32 @@ class Song {
                 "\n" +
                 "There was an old lady who swallowed a " + animal3 + ";\n" +
                 "How absurd to swallow a " + animal3 + ".\n" +
-                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
-                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                shallowToCatchPhrase(animal3, animal2) + ",\n" +
+                shallowToCatchPhrase(animal2, animal1) + ";\n" +
                 "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
                 "There was an old lady who swallowed a " + animal4 + ";\n" +
                 "Fancy that to swallow a " + animal4 + "!\n" +
-                "She swallowed the " + animal4 + " to catch the " + animal3 + ",\n" +
-                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
-                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                shallowToCatchPhrase(animal4, animal3) + ",\n" +
+                shallowToCatchPhrase(animal3, animal2) + ",\n" +
+                shallowToCatchPhrase(animal2, animal1) + ";\n" +
                 "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
                 "There was an old lady who swallowed a " + animal5 + ";\n" +
                 "What a hog, to swallow a " + animal5 + "!\n" +
-                "She swallowed the " + animal5 + " to catch the " + animal4 + ",\n" +
-                "She swallowed the " + animal4 + " to catch the " + animal3 + ",\n" +
-                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
-                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                shallowToCatchPhrase(animal5, animal4) + ",\n" +
+                shallowToCatchPhrase(animal4, animal3) + ",\n" +
+                shallowToCatchPhrase(animal3, animal2) + ",\n" +
+                shallowToCatchPhrase(animal2, animal1) + ";\n" +
                 "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
                 "There was an old lady who swallowed a " + animal6 + ";\n" +
                 "I don't know how she swallowed a " + animal6 + "!\n" +
-                "She swallowed the " + animal6 + " to catch the " + animal5 + ",\n" +
-                "She swallowed the " + animal5 + " to catch the " + animal4 + ",\n" +
-                "She swallowed the " + animal4 + " to catch the " + animal3 + ",\n" +
-                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
-                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                shallowToCatchPhrase(animal6, animal5) + ",\n" +
+                shallowToCatchPhrase(animal5, animal4) + ",\n" +
+                shallowToCatchPhrase(animal4, animal3) + ",\n" +
+                shallowToCatchPhrase(animal3, animal2) + ",\n" +
+                shallowToCatchPhrase(animal2, animal1) + ";\n" +
                 "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
                 "There was an old lady who swallowed a " + animal7 + "...\n" +
