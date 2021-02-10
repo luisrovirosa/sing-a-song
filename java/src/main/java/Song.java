@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class Song {
 
 
@@ -10,48 +13,60 @@ class Song {
         String animal5 = "dog";
         String animal6 = "cow";
         String animal7 = "horse";
+        Map<String, String> animalRhyme = Map.of(
+                "fly", "I don't know why she swallowed a fly - perhaps she'll die!",
+                "spider", "That wriggled and wiggled and tickled inside her.",
+                "bird", "How absurd to swallow a bird.",
+                "cat", "Fancy that to swallow a cat!",
+                "dog", "What a hog, to swallow a dog!",
+                "cow", "I don't know how she swallowed a cow!",
+                "horse", "...She's dead, of course!");
         String song = thereWasAnOldLadyWhoSwallowedA(animal1) + ".\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal2) + ";\n" +
-                "That wriggled and wiggled and tickled inside her.\n" +
+                animalRhyme.get(animal2) + "\n" +
                 shallowToCatchPhrase(animal2, animal1) + ";\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal3) + ";\n" +
-                "How absurd to swallow a " + animal3 + ".\n" +
+                animalRhyme.get(animal3) + "\n" +
                 shallowToCatchPhrase(animal3, animal2) + ",\n" +
                 shallowToCatchPhrase(animal2, animal1) + ";\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal4) + ";\n" +
-                "Fancy that to swallow a " + animal4 + "!\n" +
+                animalRhyme.get(animal4) + "\n" +
                 shallowToCatchPhrase(animal4, animal3) + ",\n" +
                 shallowToCatchPhrase(animal3, animal2) + ",\n" +
                 shallowToCatchPhrase(animal2, animal1) + ";\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal5) + ";\n" +
-                "What a hog, to swallow a " + animal5 + "!\n" +
+                animalRhyme.get(animal5) + "\n" +
                 shallowToCatchPhrase(animal5, animal4) + ",\n" +
                 shallowToCatchPhrase(animal4, animal3) + ",\n" +
                 shallowToCatchPhrase(animal3, animal2) + ",\n" +
                 shallowToCatchPhrase(animal2, animal1) + ";\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal6) + ";\n" +
-                "I don't know how she swallowed a " + animal6 + "!\n" +
+                animalRhyme.get(animal6) + "\n" +
                 shallowToCatchPhrase(animal6, animal5) + ",\n" +
                 shallowToCatchPhrase(animal5, animal4) + ",\n" +
                 shallowToCatchPhrase(animal4, animal3) + ",\n" +
                 shallowToCatchPhrase(animal3, animal2) + ",\n" +
                 shallowToCatchPhrase(animal2, animal1) + ";\n" +
-                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
+                iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal7) + "...\n" +
-                "...She's dead, of course!";
+                animalRhyme.get(animal7);
 
         System.out.println(song);
+    }
+
+    private static String iDontKnow(String animal1) {
+        return "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n";
     }
 
     private static String thereWasAnOldLadyWhoSwallowedA(String animal1) {
