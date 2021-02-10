@@ -3,47 +3,58 @@ class Song {
 
     public static void main(String[] args) {
 
-        String song = "There was an old lady who swallowed a fly.\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+        String animal1 = "fly";
+        String animal2 = "spider";
+        String animal3 = "bird";
+        String animal4 = "cat";
+        String animal5 = "dog";
+        String animal6 = "cow";
+        String animal7 = "horse";
+        String song = "There was an old lady who swallowed a " + animal1 + ".\n" +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a spider;\n" +
+                "There was an old lady who swallowed a " + animal2 + ";\n" +
                 "That wriggled and wiggled and tickled inside her.\n" +
-                "She swallowed the spider to catch the fly;\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                shallowToCatchPhrase(animal2, animal1) +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a bird;\n" +
-                "How absurd to swallow a bird.\n" +
-                "She swallowed the bird to catch the spider,\n" +
-                "She swallowed the spider to catch the fly;\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "There was an old lady who swallowed a " + animal3 + ";\n" +
+                "How absurd to swallow a " + animal3 + ".\n" +
+                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
+                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a cat;\n" +
-                "Fancy that to swallow a cat!\n" +
-                "She swallowed the cat to catch the bird,\n" +
-                "She swallowed the bird to catch the spider,\n" +
-                "She swallowed the spider to catch the fly;\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "There was an old lady who swallowed a " + animal4 +";\n" +
+                "Fancy that to swallow a " + animal4 +"!\n" +
+                "She swallowed the " + animal4 +" to catch the " + animal3 + ",\n" +
+                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
+                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a dog;\n" +
-                "What a hog, to swallow a dog!\n" +
-                "She swallowed the dog to catch the cat,\n" +
-                "She swallowed the cat to catch the bird,\n" +
-                "She swallowed the bird to catch the spider,\n" +
-                "She swallowed the spider to catch the fly;\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "There was an old lady who swallowed a " + animal5 + ";\n" +
+                "What a hog, to swallow a " + animal5 + "!\n" +
+                "She swallowed the " + animal5 + " to catch the " + animal4 +",\n" +
+                "She swallowed the " + animal4 +" to catch the " + animal3 + ",\n" +
+                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
+                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a cow;\n" +
-                "I don't know how she swallowed a cow!\n" +
-                "She swallowed the cow to catch the dog,\n" +
-                "She swallowed the dog to catch the cat,\n" +
-                "She swallowed the cat to catch the bird,\n" +
-                "She swallowed the bird to catch the spider,\n" +
-                "She swallowed the spider to catch the fly;\n" +
-                "I don't know why she swallowed a fly - perhaps she'll die!\n" +
+                "There was an old lady who swallowed a " + animal6 + ";\n" +
+                "I don't know how she swallowed a " + animal6 + "!\n" +
+                "She swallowed the " + animal6 + " to catch the " + animal5 + ",\n" +
+                "She swallowed the " + animal5 + " to catch the " + animal4 +",\n" +
+                "She swallowed the " + animal4 +" to catch the " + animal3 + ",\n" +
+                "She swallowed the " + animal3 + " to catch the " + animal2 + ",\n" +
+                "She swallowed the " + animal2 + " to catch the " + animal1 + ";\n" +
+                "I don't know why she swallowed a " + animal1 + " - perhaps she'll die!\n" +
                 "\n" +
-                "There was an old lady who swallowed a horse...\n" +
+                "There was an old lady who swallowed a " + animal7 + "...\n" +
                 "...She's dead, of course!";
 
         System.out.println(song);
+    }
+
+    private static String shallowToCatchPhrase(String animal2, String animal0) {
+        return "She swallowed the " + animal2 + " to catch the " + animal0 + ";\n";
     }
 }
