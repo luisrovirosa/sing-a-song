@@ -24,6 +24,7 @@ class Song {
                 "horse", "...She's dead, of course!");
         String song = thereWasAnOldLadyWhoSwallowedA(animal1) + ".\n" +
                 iDontKnow(animal1) +
+
                 thereWasAnOldLadyWhoSwallowedA(animal2) + ";\n" +
                 animalRhyme.get(animal2) + "\n" +
                 shallowToCatchPhrases(new String[]{animal2, animal1}) +
@@ -33,20 +34,22 @@ class Song {
                 animalRhyme.get(animal3) + "\n" +
                 shallowToCatchPhrases(new String[]{animal3, animal2, animal1}) +
                 iDontKnow(animal1) +
+
                 thereWasAnOldLadyWhoSwallowedA(animal4) + ";\n" +
                 animalRhyme.get(animal4) + "\n" +
                 shallowToCatchPhrases(new String[]{animal4, animal3, animal2, animal1}) +
-
                 iDontKnow(animal1) +
+
                 thereWasAnOldLadyWhoSwallowedA(animal5) + ";\n" +
                 animalRhyme.get(animal5) + "\n" +
                 shallowToCatchPhrases(new String[]{animal5, animal4, animal3, animal2, animal1}) +
                 iDontKnow(animal1) +
+
                 thereWasAnOldLadyWhoSwallowedA(animal6) + ";\n" +
                 animalRhyme.get(animal6) + "\n" +
                 shallowToCatchPhrases(new String[]{animal6, animal5, animal4, animal3, animal2, animal1}) +
-
                 iDontKnow(animal1) +
+
                 thereWasAnOldLadyWhoSwallowedA(animal7) + "...\n" +
                 animalRhyme.get(animal7);
 
