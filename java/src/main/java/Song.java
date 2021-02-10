@@ -72,11 +72,13 @@ class Song {
     }
 
     private static String shallowToCatchPhrases(String[] animals) {
-        return shallowToCatchPhrase(animals[0], animals[1]) + ",\n" +
-                shallowToCatchPhrase(animals[1], animals[2]) + ",\n" +
-                shallowToCatchPhrase(animals[2], animals[3]) + ",\n" +
-                shallowToCatchPhrase(animals[3], animals[4]) + ",\n" +
-                shallowToCatchPhrase(animals[4], animals[5]) + ";\n";
+        StringBuilder response = new StringBuilder();
+        for (int i = 0; i < animals.length - 2; i++) {
+            response.append(shallowToCatchPhrase(animals[i], animals[i + 1])).append(",\n");
+        }
+        response.append(shallowToCatchPhrase(animals[animals.length - 2], animals[animals.length - 1])).append(";\n");
+
+        return response.toString();
     }
 
     private static String shallowToCatchPhrase(String animalSwallowed, String animalToCatch) {
