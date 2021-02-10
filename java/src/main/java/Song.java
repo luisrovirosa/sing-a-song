@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -52,11 +53,8 @@ class Song {
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal6) + ";\n" +
                 animalRhyme.get(animal6) + "\n" +
-                shallowToCatchPhrase(animal6, animal5) + ",\n" +
-                shallowToCatchPhrase(animal5, animal4) + ",\n" +
-                shallowToCatchPhrase(animal4, animal3) + ",\n" +
-                shallowToCatchPhrase(animal3, animal2) + ",\n" +
-                shallowToCatchPhrase(animal2, animal1) + ";\n" +
+                shallowToCatchPhrases(new String[]{animal6, animal5, animal4, animal3, animal2, animal1}) +
+
                 iDontKnow(animal1) +
                 "\n" +
                 thereWasAnOldLadyWhoSwallowedA(animal7) + "...\n" +
@@ -71,6 +69,14 @@ class Song {
 
     private static String thereWasAnOldLadyWhoSwallowedA(String animal1) {
         return "There was an old lady who swallowed a " + animal1;
+    }
+
+    private static String shallowToCatchPhrases(String[] animals) {
+        return shallowToCatchPhrase(animals[0], animals[1]) + ",\n" +
+                shallowToCatchPhrase(animals[1], animals[2]) + ",\n" +
+                shallowToCatchPhrase(animals[2], animals[3]) + ",\n" +
+                shallowToCatchPhrase(animals[3], animals[4]) + ",\n" +
+                shallowToCatchPhrase(animals[4], animals[5]) + ";\n";
     }
 
     private static String shallowToCatchPhrase(String animalSwallowed, String animalToCatch) {
